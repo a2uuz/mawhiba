@@ -15,7 +15,7 @@ body{
     .container{
    animation: shimmy 1s infinite;
    animation-direction: alternate;
-   
+   margin-top: -25em;
     }
 
 
@@ -27,7 +27,12 @@ body{
   } 
 
   @media (min-width:500px){
-
+    .container{
+        animation: shimmy 1s infinite;
+        animation-direction: alternate;
+        margin: 0;
+        
+         }
     @keyframes shimmy {
         from { transform: translate3d(0, 0, 0)  scale(1);  }
         to   { transform: translate3d(0, 60px, 0) scale(1); }
