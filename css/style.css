@@ -1,0 +1,54 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: url(/img/a2uuz.png) top center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: shimmy 1s infinite;
+          animation: shimmy 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  margin-top: -150px;
+}
+
+@-webkit-keyframes shimmy {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.7);
+            transform: translate3d(0, 0, 0) scale(0.7);
+  }
+  to {
+    -webkit-transform: translate3d(0, 60px, 0) scale(0.7);
+            transform: translate3d(0, 60px, 0) scale(0.7);
+  }
+}
+
+@keyframes shimmy {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.7);
+            transform: translate3d(0, 0, 0) scale(0.7);
+  }
+  to {
+    -webkit-transform: translate3d(0, 60px, 0) scale(0.7);
+            transform: translate3d(0, 60px, 0) scale(0.7);
+  }
+}
+/*# sourceMappingURL=style.css.map */
