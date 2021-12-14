@@ -9,18 +9,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: tomato;
 }
 // ---------------------------------------------------
 
     .container{
-    background: url(/img/a2uuz.png) top center;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
    animation: shimmy 1s infinite;
    animation-direction: alternate;
-   margin-top: -150px;
+   
     }
 
 
@@ -28,15 +23,14 @@ body{
 @keyframes shimmy {
     from { transform: translate3d(0, 0, 0)  scale(0.7);  }
     to   { transform: translate3d(0, 60px, 0) scale(0.7); }
+
+  } 
+
+  @media (min-width:500px){
+
+    @keyframes shimmy {
+        from { transform: translate3d(0, 0, 0)  scale(1);  }
+        to   { transform: translate3d(0, 60px, 0) scale(1); }
     
+      } 
   }
-
-
-  .container-two{
-
-    background: url(/img/a2uuz.png) top center;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-

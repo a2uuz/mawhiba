@@ -16,19 +16,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-color: tomato;
 }
 
 .container {
-  background: url(/img/a2uuz.png) top center;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
   -webkit-animation: shimmy 1s infinite;
           animation: shimmy 1s infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  margin-top: -150px;
 }
 
 @-webkit-keyframes shimmy {
@@ -53,10 +47,26 @@ body {
   }
 }
 
-.container-two {
-  background: url(/img/a2uuz.png) top center;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
+@media (min-width: 500px) {
+  @-webkit-keyframes shimmy {
+    from {
+      -webkit-transform: translate3d(0, 0, 0) scale(1);
+              transform: translate3d(0, 0, 0) scale(1);
+    }
+    to {
+      -webkit-transform: translate3d(0, 60px, 0) scale(1);
+              transform: translate3d(0, 60px, 0) scale(1);
+    }
+  }
+  @keyframes shimmy {
+    from {
+      -webkit-transform: translate3d(0, 0, 0) scale(1);
+              transform: translate3d(0, 0, 0) scale(1);
+    }
+    to {
+      -webkit-transform: translate3d(0, 60px, 0) scale(1);
+              transform: translate3d(0, 60px, 0) scale(1);
+    }
+  }
 }
 /*# sourceMappingURL=style.css.map */
