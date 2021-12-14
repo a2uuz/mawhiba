@@ -23,7 +23,6 @@ body {
           animation: shimmy 1s infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  margin-top: -25em;
 }
 
 @-webkit-keyframes shimmy {
