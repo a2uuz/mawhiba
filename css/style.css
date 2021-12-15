@@ -32,6 +32,13 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
 .container {
   -webkit-animation: shimmy 1s infinite;
           animation: shimmy 1s infinite;
@@ -98,8 +105,8 @@ button::after {
 }
 
 button:hover::after {
-  -webkit-animation: 1s glitch;
-          animation: 1s glitch;
+  -webkit-animation: 0.5s glitch;
+          animation: 0.5s glitch;
   -webkit-animation-timing-function: steps(2, end);
           animation-timing-function: steps(2, end);
 }
